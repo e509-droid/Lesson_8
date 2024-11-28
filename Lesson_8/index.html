@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма с валидацией</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<main>
+		<div class="form-container">
+			<form class="form">
+				<fieldset class="full-width">
+					<legend>Имя</legend>
+					<div class="input-group">
+						<label for="lastname">Фамилия</label>
+						<input type="text" id="lastname" name="lastname" placeholder="Введите фамилию">
+					</div>
+					<div class="input-group">
+						<label for="firstname">Имя</label>
+						<input type="text" id="firstname" name="firstname" placeholder="Введите имя">
+					</div>
+				</fieldset>
+				<div class="flex-container">
+					<fieldset>
+						<legend>Пол</legend>
+						<div class="input-group aligned">
+							<input type="radio" id="male" name="gender" value="male">
+							<label for="male">Мужской</label>
+						</div>
+						<div class="input-group aligned">
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="female">Женский</label>
+						</div>
+						<div class="input-group aligned">
+							<input type="radio" id="none" name="gender" value="none">
+							<label for="none">Не хочу говорить</label>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Рассылка</legend>
+						<div class="input-group aligned">
+							<input type="checkbox" id="email" name="subscription" value="email">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-group aligned">
+							<input type="checkbox" id="sms" name="subscription" value="sms">
+							<label for="sms">SMS</label>
+						</div>
+					</fieldset>
+				</div>
+
+				<button type="submit" class="submit-button">Отправить</button>
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>
